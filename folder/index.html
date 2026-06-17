@@ -23,6 +23,8 @@
                         'peach-deep': '#f4e9e2',
                         'aqua': '#6fb7b1',
                         'leaf': '#7fb39a',
+                        'limegreen': '#a9c94e',
+                        'limegreen-dark': '#95b73d',
                         'ink': '#5b524c',
                     },
                     fontFamily: {
@@ -76,25 +78,23 @@
 
     <main id="top">
         <!-- ============ HERO ============ -->
-        <section class="relative bg-peach">
-            <div class="relative min-h-[520px] md:min-h-[660px] bg-cover bg-center" style="background-image:linear-gradient(to left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.5) 20%, rgba(255,255,255,0) 48%), url('2.png');">
-                <!-- vertical catch copy -->
-                <div class="absolute top-10 right-6 md:top-16 md:right-16 flex gap-3 md:gap-5">
-                    <h1 class="v-text font-round font-black text-ink leading-[1.4] text-3xl md:text-5xl tracking-wider" style="text-shadow:0 2px 12px rgba(255,255,255,0.9);">
-                        あなたの事業所<span class="text-coral-dark">らしさ</span>を、<br>動画で<span class="text-coral-dark">確実に</span>。
-                    </h1>
-                    <p class="v-text font-round font-bold text-ink/80 text-base md:text-xl leading-loose self-start mt-2" style="text-shadow:0 2px 12px rgba(255,255,255,0.9);">
-                        運営指導に強い、重要事項説明動画DX
-                    </p>
-                </div>
-
-                <!-- coral organic wave divider (画像下端にぴったり重ねて隙間をなくす) -->
-                <div class="absolute bottom-0 left-0 w-full leading-none pointer-events-none">
-                    <svg viewBox="0 0 1440 130" preserveAspectRatio="none" class="w-full h-16 md:h-28 block" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0,70 C260,20 420,120 720,95 C1010,70 1180,15 1440,60 L1440,130 L0,130 Z" fill="#f6a98a"/>
-                        <path d="M0,98 C300,55 460,135 720,112 C1010,90 1200,58 1440,92 L1440,130 L0,130 Z" fill="#ee7f5c"/>
-                    </svg>
-                </div>
+        <section class="relative bg-white">
+            <img src="11.png" alt="介護職員がノートPCで利用者・ご家族に説明する様子" class="w-full block">
+            <!-- vertical catch copy（文章は維持） -->
+            <div class="absolute top-6 right-5 md:top-10 md:right-12 flex gap-3 md:gap-5">
+                <h1 class="v-text font-round font-black text-ink leading-[1.4] text-2xl md:text-5xl tracking-wider" style="text-shadow:0 2px 12px rgba(255,255,255,0.95);">
+                    あなたの事業所<span class="text-coral-dark">らしさ</span>を、<br>動画で<span class="text-coral-dark">確実に</span>。
+                </h1>
+                <p class="v-text font-round font-bold text-ink/80 text-sm md:text-xl leading-loose self-start mt-1" style="text-shadow:0 2px 12px rgba(255,255,255,0.95);">
+                    運営指導に強い、重要事項説明動画DX
+                </p>
+            </div>
+            <!-- coral organic wave divider -->
+            <div class="-mt-1 leading-none pointer-events-none">
+                <svg viewBox="0 0 1440 130" preserveAspectRatio="none" class="w-full h-16 md:h-24 block" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,70 C260,20 420,120 720,95 C1010,70 1180,15 1440,60 L1440,130 L0,130 Z" fill="#f8b89e"/>
+                    <path d="M0,98 C300,55 460,135 720,112 C1010,90 1200,58 1440,92 L1440,130 L0,130 Z" fill="#f0876a"/>
+                </svg>
             </div>
         </section>
 
@@ -164,11 +164,11 @@
 
         <!-- ============ PHOTO STRIP ============ -->
         <section class="grid grid-cols-2 md:grid-cols-5">
-            <div class="aspect-square bg-cover bg-center" style="background-image:url('svc-care-manager.png');"></div>
-            <div class="aspect-square bg-cover bg-center" style="background-image:url('svc-home-visit.png');"></div>
-            <div class="aspect-square bg-cover bg-center" style="background-image:url('svc-equipment.png');"></div>
-            <div class="aspect-square bg-cover bg-center" style="background-image:url('sub.webp');"></div>
-            <div class="aspect-square bg-cover bg-center col-span-2 md:col-span-1" style="background-image:url('main.webp');"></div>
+            <div class="aspect-[4/3] bg-cover bg-center" style="background-image:url('12.png');"></div>
+            <div class="aspect-[4/3] bg-cover bg-center" style="background-image:url('15.png');"></div>
+            <div class="aspect-[4/3] bg-cover bg-center" style="background-image:url('13.png');"></div>
+            <div class="aspect-[4/3] bg-cover bg-center" style="background-image:url('16.png');"></div>
+            <div class="aspect-[4/3] bg-cover bg-center col-span-2 md:col-span-1" style="background-image:url('14.png');"></div>
         </section>
 
         <!-- ============ FEATURES（在宅医療位置：特徴） ============ -->
@@ -237,17 +237,16 @@
         </section>
 
         <!-- ============ PRICE ============ -->
-        <section id="price" class="relative bg-peach pt-24 pb-20 px-5">
+        <section id="price" class="relative bg-limegreen pt-24 pb-16 md:pb-20 px-5">
             <div class="absolute top-0 left-0 w-full -translate-y-[99%] leading-none">
-                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="w-full h-12 md:h-20" xmlns="http://www.w3.org/2000/svg"><path d="M0,60 C300,110 460,10 720,40 C1010,72 1200,110 1440,60 L1440,120 L0,120 Z" fill="#fdf8f4"/></svg>
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="w-full h-12 md:h-20" xmlns="http://www.w3.org/2000/svg"><path d="M0,60 C300,110 460,10 720,40 C1010,72 1200,110 1440,60 L1440,120 L0,120 Z" fill="#a9c94e"/></svg>
             </div>
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-8">
-                    <p class="label-en text-coral font-bold text-sm">PRICE</p>
-                    <div class="w-10 h-[2px] bg-coral mx-auto my-3"></div>
-                    <h2 class="text-2xl md:text-3xl font-black font-round text-ink mt-1">＼ 先行特別価格で受付中 ／</h2>
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-7">
+                    <p class="label-en text-white font-bold text-sm opacity-90">PRICE</p>
+                    <h2 class="text-2xl md:text-3xl font-black font-round text-white mt-2" style="text-shadow:0 1px 4px rgba(0,0,0,0.12);">＼ 先行特別価格で受付中 ／</h2>
                 </div>
-                <div class="bg-white rounded-3xl shadow-xl flex flex-col md:flex-row justify-between items-center p-8 md:p-10 gap-6">
+                <div class="bg-white rounded-3xl shadow-xl flex flex-col md:flex-row justify-between items-center p-8 md:p-10 gap-6 text-ink">
                     <div class="text-left">
                         <h3 class="text-lg font-bold font-round mb-1">あなたの介護事業所専用に完全制作</h3>
                         <p class="text-sm text-gray-500 mb-2">初回製作費：1事業所 50,000円 ➔ <span class="text-coral-dark font-bold">先行価格 30,000円</span></p>
