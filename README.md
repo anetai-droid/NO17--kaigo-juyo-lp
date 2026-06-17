@@ -6,11 +6,7 @@
 ## デプロイ先
 
 GitHub Pages（公開後に下記URLを実際のものへ更新してください）
-
-```
-[[https://anetai-droid.github.io/＜リポジトリ名＞/folder/index.html](https://anetai-droid.github.io/NO17--kaigo-juyo-lp/folder/index.html)](https://anetai-droid.github.io/NO17--kaigo-juyo-lp/folder/index.html)
-```
-
+https://anetai-droid.github.io/NO17--kaigo-juyo-lp/folder/index.html
 ## ディレクトリ構成
 
 ```
